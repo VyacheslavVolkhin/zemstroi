@@ -1,0 +1,90 @@
+/* ----------------------------------- *\
+			forms elements styles
+\* ----------------------------------- */
+.field-title {
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 400;
+	margin-bottom: 10px;
+	.ftitle;
+}
+.frm-row,
+.frm-field,
+.frm-row-submit {
+    display: flex;
+    flex-wrap: wrap;
+	position: relative;
+	margin: 0 -10px;
+}
+.frm-field {
+    display: block;
+    width: 100%;
+	margin: 0 0 20px 0;
+	padding: 0 10px;
+}
+.frm-select {
+	position: relative;
+	display: block;
+	overflow: hidden;
+    line-height: 1;
+	input {
+		display: block;
+		position: absolute;
+		top: 0;left: 0;
+		width: 0;height: 0;
+		opacity: 0;
+		margin: 0;
+		padding: 0;
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		display: block;
+		position: relative;
+		cursor: pointer;
+        &:before, &:after {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+		&:after {
+			opacity: 0;
+		}
+	}
+}
+
+
+.frm-select {
+	input {
+		&:checked {
+			&~label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	label {
+		&:before, &:after {
+			
+		}
+		&:after {
+			border-radius: 0;
+			border: none;
+			background: url(../img/icons/chk.svg) center / 24px auto no-repeat;
+			opacity: 0;
+		}
+	}
+	a {
+		color: inherit;
+		&:hover {
+			color: var(--clr-att);
+		}
+	}
+}
