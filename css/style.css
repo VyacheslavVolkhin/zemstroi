@@ -2788,3 +2788,57 @@ ol li:nth-child(9) ~ li:before {
   }
 }
 /* end inner page */
+/* inner title */
+@media (min-width: 1024px) {
+  .lead-box.section-inner .info-inner-wrap {
+    overflow: visible;
+  }
+  .lead-box.section-inner .section-title {
+    overflow: visible;
+  }
+  .lead-box.section-inner .section-title.title02 {
+    font-size: 88px;
+    margin-bottom: 1em;
+  }
+  .lead-box.section-inner .section-title.title02 .title-line:nth-child(2) {
+    font-size: 0.705em;
+  }
+  .lead-box.section-inner .section-title.title02 .title-line:nth-child(3) {
+    font-size: 0.6em;
+  }
+  .lead-box.section-inner .section-title.title03 {
+    font-size: 82.1px;
+    margin-bottom: 0.4em;
+  }
+  .lead-box.section-inner .section-title.title03 .title-line:nth-child(2) {
+    font-size: 0.768em;
+  }
+  .lead-box.section-inner .section-title.title03 .title-line:nth-child(3) {
+    font-size: 1.2em;
+  }
+  .lead-box.section-inner .section-title.title04 {
+    font-size: 92px;
+    margin-bottom: 0.8em;
+  }
+  .lead-box.section-inner .section-title.title04 .title-line:nth-child(2) {
+    font-size: 0.55em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1499px) {
+  .lead-box.section-inner .section-title {
+    overflow: visible;
+  }
+  .lead-box.section-inner .section-title.title02 {
+    margin-bottom: 0.6em;
+    font-size: 5.7472vw;
+  }
+  .lead-box.section-inner .section-title.title03 {
+    margin-bottom: 0.2em;
+    font-size: 5.3692vw;
+  }
+  .lead-box.section-inner .section-title.title04 {
+    margin-bottom: 0.7em;
+    font-size: 5.99vw;
+  }
+}
+/* end inner title */
